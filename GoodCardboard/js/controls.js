@@ -1,0 +1,1 @@
+ymaps.ready(init);function init(){var myMap=new ymaps.Map('map',{center:[56.136,40.390],zoom:10});myMap.controls.add('zoomControl',{left:5,top:5}).add('mapTools',{left:35,top:5});myMap.controls.add(trafficControl).add(new ymaps.control.MiniMap({type:'yandex#publicMap'}));}
