@@ -16,8 +16,8 @@
 		<!-- App & fonts-->
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="https://zhagun.github.io/assets/css/main.css">
-		<link rel="stylesheet" href="https://zhagun.github.io/assets/css/responsive.css"><!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/responsive.css"><!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
 	</head>
@@ -91,7 +91,7 @@
 																			<p class="page-title__text"></p>
 																			<div class="page-title__divider"></div> -->
 									<div class="page-title__socials">
-											<ul>
+										<ul>
 											<li><a href="https://vk.com/bezb622" class="socials socials-vk"></a></li>
 											<li><a href="https://telegram.me/Zhagun" class="socials socials-inst"></a></li>
 											<li><a href="https://www.instagram.com/zhagunpavel/" class="socials socials-tg"></a></li>
@@ -126,7 +126,7 @@
 										<div class="grid-item__content-wrapper">
 											
 											<!-- work -->
-											<div class="work"><a href="https://zhagun.github.io/TruckMS">
+											<div class="work"><a href="work-detail.html">
 													
 													<!-- hoverbox ef-slide-bottom -->
 													<div class="hoverbox ef-slide-bottom light">
@@ -153,7 +153,7 @@
 										<div class="grid-item__content-wrapper">
 											
 											<!-- work -->
-											<div class="work"><a href="https://zhagun.github.io/GoodCardboard">
+											<div class="work"><a href="work-detail.html">
 													
 													<!-- hoverbox ef-move-top -->
 													<div class="hoverbox ef-move-top light">
@@ -274,11 +274,11 @@
 									<div class="progress">
 										<h5 class="progress__title">design</h5>
 										<div class="progress__wrap">
-											<div class="progress__bar" data-progress-percent="40" data-timing="ease" data-duration="1000" data-delay="500"></div><span class="progress__number">39%</span>
+											<div class="progress__bar" data-progress-percent="33" data-timing="ease" data-duration="1000" data-delay="500"></div><span class="progress__number">39%</span>
 										</div>
 									</div><!-- End / progress -->
 									<div class="progress">
-										<h5 class="progress__title">git</h5>
+										<h5 class="progress__title">design</h5>
 										<div class="progress__wrap">
 											<div class="progress__bar" data-progress-percent="33" data-timing="ease" data-duration="1000" data-delay="500"></div><span class="progress__number">39%</span>
 										</div>
@@ -309,17 +309,18 @@
 						</div>
 						<!-- /.col-5 -->
 						<div class="col-12 col-lg-7">
-							<form action="" class="contacts-form">
-								<input type="text"  placeholder="Имя">
-								<input type="text"  placeholder="E-mail">
-								<textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+							<form id="form" class="contacts-form" name="form">
+								<input type="text" name="name" placeholder="Имя">
+								<input type="text" name="phone" placeholder="E-mail">
+								<textarea name="text" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
 								<div class="contact-btn">
-								<input class="button" type="submit">
+								<button class="button" type="submit">Отправить</button>
 								</div>
 							</form>
 							<!-- /.contacts-form -->
 						</div>
 					</div>
+
 					<!-- /.row -->
 				</div>
 				<!-- /.container -->
@@ -336,22 +337,22 @@
 							<div class="footer__social">
 								
 								<!-- social-icon -->
-								<a class="social-icon" href="https://vk.com/bezb622"><i class="social-icon__icon fa fa-vk"></i>
+								<a class="social-icon" href="#"><i class="social-icon__icon fa fa-vk"></i>
 								</a><!-- End / social-icon -->
 								
 								
 								<!-- social-icon -->
-								<a class="social-icon" href="https://telegram.me/Zhagun"><i class="social-icon__icon fa fa-telegram"></i>
+								<a class="social-icon" href="#"><i class="social-icon__icon fa fa-telegram"></i>
 								</a><!-- End / social-icon -->
 								
 								
 								<!-- social-icon -->
-								<a class="social-icon" href="https://www.instagram.com/zhagunpavel/"><i class="social-icon__icon fa fa-instagram"></i>
+								<a class="social-icon" href="#"><i class="social-icon__icon fa fa-instagram"></i>
 								</a><!-- End / social-icon -->
 								
 								
 								<!-- social-icon -->
-								<a class="social-icon" href="skype:bezb226"><i class="social-icon__icon fa fa-skype"></i>
+								<a class="social-icon" href="#"><i class="social-icon__icon fa fa-skype"></i>
 								</a><!-- End / social-icon -->
 								
 							</div>
@@ -375,6 +376,7 @@
 		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
 		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
 		<!-- App-->
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
 	</body>
 </html>

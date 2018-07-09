@@ -42,6 +42,18 @@
     .skills__info {
       margin-bottom: 30px;
     }
+    .socials-vk {
+        background: url(../img/socials/socials.png) no-repeat 0px -61px;
+    }
+    .socials-inst {
+        background: url(../img/socials/socials.png) no-repeat -73px -61px;
+    }
+    .socials-tg {
+        background: url(../img/socials/socials.png) no-repeat -143px -61px;
+    }
+    .socials-skp {
+        background: url(../img/socials/socials.png) no-repeat -218px -61px;
+    }
     .footer {
         text-align: left;
     }
