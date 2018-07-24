@@ -1,0 +1,92 @@
+.header
+    background-color: $active-color
+    &-logo
+        position: absolute
+        left: 35%
+        text-align: right
+        z-index: 3
+    &-info
+        display: flex
+        text-align: center
+        color: #ffffff
+        &__block
+            display: flex
+            padding: 10px 25px
+            min-width: 140px
+            border-right: 1px solid black
+            align-items: center
+            & span
+                padding-left: 5px
+.block-last
+    background-color: #fff
+    color: #000
+.navBurger
+    display: none
+    justify-content: flex-end
+    align-items: center
+.menu-btn
+    display: block
+    width: 50px
+    height: 50px
+    background-color: #fff
+    border-radius: 50%
+    position: relative
+    opacity: 0.6
+    & span
+        position: absolute
+        top: 50%
+        margin-top: -1px
+        left: 50%
+        margin-left: -10px
+        width: 20px
+        height: 2px
+        background-color: #222
+        &::after, &::before
+            position: absolute
+            top: 50%
+            margin-top: -1px
+            left: 50%
+            margin-left: -10px
+            width: 20px
+            height: 2px
+            background-color: #222
+        &::after, &::before
+            content: ""
+            display: block
+            transition: 0.5s
+        &::before
+            transform: translateY(-5px)
+        &::after
+            transform: translateY(5px)
+.menu-btn_active span
+    &::before
+        transform: rotate(35deg)
+        width: 10px
+        transform-origin: left bottom
+    &::after
+        transform: rotate(-35deg)
+        width: 10px
+        transform-origin: left top
+.menu-block
+    display: flex
+    justify-content: flex-end
+    align-items: flex-start
+.menu-nav
+    transition: 0.5s
+    transform-origin: right center
+    transform: scale(0) translateX(20%)
+    opacity: 0
+.menu-nav__link
+    display: block
+    text-decoration: none
+    color: #fff
+    margin-bottom: 10px
+    margin-top: 10px
+.menu-nav_active
+    transform: scale(1) translateX(0%)
+    opacity: 1
+
+
+
+            
+
