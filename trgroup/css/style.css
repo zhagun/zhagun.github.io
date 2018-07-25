@@ -644,6 +644,15 @@
     border: none;
     text-align: center;
   }
+
+  .cargo-expensive-title {
+    line-height: 1.7;
+  }
+
+  .contacts-block-adress {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
 }
 
 html {
