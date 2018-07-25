@@ -40,7 +40,7 @@
         margin: 0;
     }
     .skills__info {
-      margin-bottom: 30px;
+        margin-bottom: 30px;
     }
     .socials-vk {
         background: url(../img/socials/socials.png) no-repeat 0px -61px;
@@ -57,17 +57,14 @@
     .footer {
         text-align: left;
     }
-
     .footer__coppy {
         text-align: center;
         margin-bottom: 15px;
     }
-
     .footer__social {
         text-align: center;
     }
 }
-
 
 @media (min-width: 1200px) {
     .awe-section {
@@ -86,11 +83,10 @@
     .post-detail__title {
         font-size: 40px;
     }
-     .work-detail__title {
+    .work-detail__title {
         font-size: 40px;
     }
-       .work__title {
+    .work__title {
         font-size: 22px;
     }
-
 }
