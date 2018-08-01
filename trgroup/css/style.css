@@ -1,5 +1,8 @@
+@charset "UTF-8";
+
 .button {
-  background: linear-gradient(-22deg, #0b5e8f, #4189a8, #0b5e8f);
+  background: -webkit-gradient(linear, left top, right bottom, from(#0b5e8f), color-stop(45%, #33a0e0), color-stop(55%, #33a0e0), to(#0b5e8f));
+  background: linear-gradient(to bottom right, #0b5e8f, #33a0e0 45%, #33a0e0 55%, #0b5e8f);
   border: none;
   border-radius: 20px;
   padding: 15px 25px;
@@ -9,7 +12,8 @@
 
 .button:hover {
   cursor: pointer;
-  background: linear-gradient(-22deg, #0a547f, #38758f, #0a547f);
+  background: -webkit-gradient(linear, left top, right bottom, from(#0b5e8f), color-stop(45%, #187fbb), color-stop(55%, #187fbb), to(#0b5e8f));
+  background: linear-gradient(to bottom right, #0b5e8f, #187fbb 45%, #187fbb 55%, #0b5e8f);
 }
 
 .input {
@@ -93,6 +97,91 @@
   color: #000000;
 }
 
+.inquiry-form .form-input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #303030;
+  font-size: 0.8rem;
+  font-family: 'RobotoBold', sans-serif;
+  padding-bottom: 1.1rem;
+  width: 23rem;
+  margin: 0 1.5rem 0.8rem;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.inquiry-form .text {
+  background: url("../img/inquiry.png") left 0.1rem no-repeat;
+  background-size: 1.2rem;
+  padding-left: 2.1rem;
+  padding-bottom: 1.1rem;
+  line-height: 0.8rem;
+  /*высота строки ввода*/
+  font-size: 1.1rem;
+  /*размер шрифта*/
+  color: #303030;
+  margin-bottom: 3rem;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 3.1rem 0.6rem 3.4rem;
+  width: 62rem;
+  text-align: center;
+}
+
+.popup-form .text {
+  display: inline-block;
+  width: 23rem;
+}
+
+.popup-close {
+  position: absolute;
+  top: -3rem;
+  right: 0rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #ffffff;
+  outline: none;
+}
+
+.popup-close:hover {
+  cursor: pointer;
+}
+
+.popup-header {
+  margin-bottom: 2.8rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'RobotoBold', sans-serif;
+  color: #2f3141;
+}
+
+.blue-btn {
+  margin-bottom: 1.7rem;
+}
+
 .header {
   background-color: #18409c;
 }
@@ -126,6 +215,10 @@
 
 .header-info__block span {
   padding-left: 5px;
+}
+
+.call:hover {
+  cursor: pointer;
 }
 
 .block-last {
@@ -653,6 +746,14 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
+
+  .popup-content {
+    max-width: 20rem;
+  }
+
+  .popup-form .text {
+    width: 15rem;
+  }
 }
 
 html {
@@ -664,4 +765,11 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   color: #7f7d89;
+}
+
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
 }
