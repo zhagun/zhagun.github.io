@@ -1,0 +1,630 @@
+.button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  color: #ffffff;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(-22deg, #0a547f, #38758f, #0a547f);
+}
+
+.kontakt-btn {
+  background-color: transparent;
+  padding: 1.2rem;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 3.5rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.kontakt-btn:hover {
+  background-color: #ffffff;
+  color: gray;
+  text-decoration: none;
+}
+
+.btn-arrow {
+  position: absolute;
+  top: 30%;
+  display: block;
+  height: 93px;
+  width: 28px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-next {
+  right: -15px;
+  background: transparent url("../img/partners/next.png") center no-repeat;
+}
+
+.btn-prev {
+  left: -15px;
+  background: transparent url("../img/partners/prev.png") center no-repeat;
+}
+
+.darck-bg {
+  position: relative;
+  z-index: 2;
+}
+
+.darck-bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.text-title {
+  position: relative;
+  display: inline-block;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 6rem;
+}
+
+.text-title::before {
+  content: '';
+  position: absolute;
+  width: 106px;
+  height: 2px;
+  left: -13rem;
+  top: 50%;
+  background: url("../img/line-darck.png") no-repeat;
+}
+
+.text-title::after {
+  content: '';
+  position: absolute;
+  width: 106px;
+  height: 2px;
+  right: -13rem;
+  top: 50%;
+  background: url("../img/line-darck.png") no-repeat;
+}
+
+.header {
+  position: relative;
+  background: #141d2a;
+  padding-top: 4rem;
+  padding-bottom: 28rem;
+  overflow-x: hidden;
+}
+
+.company {
+  position: relative;
+  margin-bottom: 4rem;
+  z-index: 3;
+}
+
+.company-logo {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.company-descr {
+  text-align: center;
+}
+
+.company-phone a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.company h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.main-slider {
+  overflow: hidden;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-slider-box {
+  position: relative;
+  min-height: 102rem;
+  height: 100%;
+  outline: none;
+}
+
+.main-slider-box:nth-child(1) {
+  background: url("../img/header/main-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.main-slider-box:nth-child(2) {
+  background: url("../img/header/world-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.line-after {
+  margin-left: 1.5rem;
+}
+
+.line-before {
+  margin-right: 1.5rem;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slider-main {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: none;
+  z-index: 99;
+}
+
+.slide-n {
+  background: url("../img/header/arrow-next.png") no-repeat;
+  right: 1rem;
+  width: 3rem;
+  height: 5rem;
+}
+
+.slide-p {
+  background: url("../img/header/arrow-prev.png") no-repeat;
+  left: 1rem;
+  width: 3rem;
+  height: 5rem;
+}
+
+.nav {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.header-nav {
+  text-align: center;
+}
+
+.header-nav li {
+  margin-right: 3.4rem;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.header-nav li a {
+  color: #ffffff;
+  position: relative;
+}
+
+.main-text {
+  text-align: center;
+  z-index: 3;
+  position: relative;
+}
+
+.main-text-title {
+  margin-top: 17rem;
+  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 7rem;
+  color: #ffffff;
+}
+
+.main-text-descr {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.services {
+  position: relative;
+  text-align: center;
+  padding-bottom: 5rem;
+  background: #f8f8f8;
+  color: #242830;
+  height: 36rem;
+  z-index: 99;
+}
+
+.services-wrap {
+  padding: 3rem;
+  padding-top: 4rem;
+  position: absolute;
+  background: #f8f8f8;
+  width: 100%;
+  top: -12rem;
+  left: 0;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.services-container {
+  position: relative;
+}
+
+.services-block {
+  position: relative;
+  height: 100%;
+  padding: 2rem;
+  text-align: right;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background-color: #ffffff;
+}
+
+.services-block-img {
+  height: 14rem;
+  width: 100%;
+}
+
+.services-block-img-1 {
+  background: url("../img/services/transport-darck.png") no-repeat center center;
+}
+
+.services-block-img-2 {
+  background: url("../img/services/forward-darck.png") no-repeat center center;
+}
+
+.services-block-img-3 {
+  background: url("../img/services/logistic-darck.png") no-repeat center center;
+}
+
+.services-block h4 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 4.5rem;
+}
+
+.services-block p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.services-block-hover {
+  position: absolute;
+  padding: 2rem;
+  background: #272e3c;
+  -webkit-transform: translateX(-120%);
+  transform: translateX(-120%);
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.services-block-hover-img-1 {
+  background: url("../img/services/transport-light.png") no-repeat center center;
+}
+
+.services-block-hover-img-2 {
+  background: url("../img/services/forward-light.png") no-repeat center center;
+}
+
+.services-block-hover-img-3 {
+  background: url("../img/services/logistic-light.png") no-repeat center center;
+}
+
+.services-block-hover h4 {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.services-block:hover .services-block-hover {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.services-btn {
+  position: relative;
+  color: #ffffff;
+  top: 4.5rem;
+  -webkit-transform: translateY(-2.5rem);
+  transform: translateY(-2.5rem);
+  background: transparent;
+  border: 2px solid #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 10rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.services-btn:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.about {
+  background: url("../img/about/information-bg.jpg") no-repeat, #ffffff;
+  background-position: left 0 center;
+  background-size: 50vw;
+  background-attachment: fixed;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.5rem;
+}
+
+.info {
+  background-color: gray;
+  padding: 2.5rem;
+}
+
+.info-block {
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+.info-block span {
+  margin-left: 1.5rem;
+  color: #ffffff;
+}
+
+.countries {
+  margin-top: 6rem;
+}
+
+.countries-title {
+  text-align: center;
+}
+
+.country-list {
+  display: inline-block;
+}
+
+.country-list li {
+  list-style-type: none;
+  padding: 2rem 1rem;
+  font-size: 1.6rem;
+}
+
+.geo-country {
+  text-align: center;
+}
+
+#geo-map {
+  background: url("../img/countries/map-europe2.png") no-repeat;
+  width: 60rem;
+  height: 50rem;
+  position: relative;
+}
+
+#geo-map img {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+
+#poland {
+  background: url("../img/countries/flags/poland.png") no-repeat 0px 13px;
+  padding-left: 40px;
+}
+
+#niderlands {
+  background: url("../img/countries/flags/netherlands.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#uk {
+  background: url("../img/countries/flags/united-kingdom.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#hungary {
+  background: url("../img/countries/flags/hungary.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#czech {
+  background: url("../img/countries/flags/czech-republic.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#germany {
+  background: url("../img/countries/flags/germany.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#romania {
+  background: url("../img/countries/flags/romania.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#france {
+  background: url("../img/countries/flags/france.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#austria {
+  background: url("../img/countries/flags/austria.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#belgium {
+  background: url("../img/countries/flags/belgium.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#italy {
+  background: url("../img/countries/flags/italy.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#norway {
+  background: url("../img/countries/flags/norway.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#spain {
+  background: url("../img/countries/flags/spain.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#sweden {
+  background: url("../img/countries/flags/sweden.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#slovakia {
+  background: url("../img/countries/flags/slovakia.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#denmark {
+  background: url("../img/countries/flags/denmark.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#lithuania {
+  background: url("../img/countries/flags/lithuania.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+#latvia {
+  background: url("../img/countries/flags/latvia.png") no-repeat 0px 13px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.counters {
+  background: url("../img/counters/counters-bg.jpg") no-repeat;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  margin-top: 3rem;
+}
+
+.counters-block-clients {
+  background-color: red;
+  opacity: 0.6;
+  width: 30rem;
+  height: 30rem;
+  text-align: center;
+}
+
+.counters-block-clients::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.counters-block-country {
+  background-color: green;
+  opacity: 0.6;
+  width: 30rem;
+  height: 30rem;
+  text-align: center;
+}
+
+.counters-block-country::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.counters-block-work {
+  background-color: blue;
+  opacity: 0.6;
+  width: 30rem;
+  height: 30rem;
+  text-align: center;
+}
+
+.counters-block-work::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.centered {
+  font-size: 3rem;
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.partners {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.partners-block {
+  text-align: center;
+  margin-right: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.partners-block:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.car {
+  text-align: center;
+}
+
+.car img {
+  margin: 0 auto;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
