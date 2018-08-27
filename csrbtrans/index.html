@@ -12,6 +12,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -147,9 +148,8 @@
                                     <div class="col-6">
                                         <h4>Transport</h4>
                                         <p>Realizujemy transporty krajowe i międzynarodowe, częściowe i całopojazdowe.</p>
-                                        <form action="">
-                                            <button class="services-btn">Więcej</button>
-                                        </form>
+                                        <button class="services-btn open-modal" data-modal="#modal1">Więcej</button>
+
                                     </div>
                                 </div>
                             </div>
@@ -174,9 +174,8 @@
                                     <div class="col-6">
                                         <h4>Spedycja</h4>
                                         <p>Świadczymy usługi spedycyjne dla firm z różnych gałęzi przemysłu i handlu</p>
-                                        <form action="">
-                                            <button class="services-btn">Więcej</button>
-                                        </form>
+                                        <button class="services-btn open-modal" data-modal="#modal2">Więcej</button>
+
                                     </div>
                                 </div>
                             </div>
@@ -201,9 +200,7 @@
                                     <div class="col-6">
                                         <h4>Logistyka</h4>
                                         <p>Obsługa logistyczna, elastyczność, dostosowana do indywidualnych potrzeb klientów</p>
-                                        <form action="">
-                                            <button class="services-btn">Więcej</button>
-                                        </form>
+                                        <button class="services-btn open-modal" data-modal="#modal3">Więcej</button>
                                     </div>
                                 </div>
                             </div>
@@ -291,7 +288,7 @@
                         <img class="italy" src="img/countries/map-europe-names-italy.png" alt="">
                         <img class="slovakia" src="img/countries/map-europe-names-slovakia.png" alt="">
                         <img class="austria" src="img/countries/map-europe-names-austria.png" alt="">
-                        <img class="uk" src="img/countries/map-europe-names-unk.png" alt="">
+                        <img class="uk" src="img/countries/map-europe-names-uk.png" alt="">
                         <img class="romania" src="img/countries/map-europe-names-romania.png" alt="">
                         <img class="denmark" src="img/countries/map-europe-names-denmark.png" alt="">
                         <img class="sweden" src="img/countries/map-europe-names-sweden.png" alt="">
@@ -367,35 +364,104 @@
             </div>
         </div>
     </section>
-    <section class="partners" id="partners">
+    <section class="cars" id="cars">
         <div class="container">
             <div class="countries-title">
-                <h2 class="text-title">Sprawdź nasz zasięg logistyczny</h2>
+                <h2 class="text-title">POJAZDY</h2>
             </div>
             <div class="car-slider">
                 <div class="car">
-                    <a class="image-popup-no-margins" href="img/partners/sitroen.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
-                        <img src="img/partners/sitroen_small.jpg">
+                    <a class="image-popup-no-margins" href="img/cars/sitroen.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
+                        <img src="img/cars/sitroen_small.jpg">
                     </a>
                 </div>
                 <div class="car">
-                    <a class="image-popup-no-margins" href="img/partners/mersedes.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
-                        <img src="img/partners/mersedes_small.jpg">
+                    <a class="image-popup-no-margins" href="img/cars/mersedes.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
+                        <img src="img/cars/mersedes_small.jpg">
                     </a>
                 </div>
                 <div class="car">
-                    <a class="image-popup-no-margins" href="img/partners/renualt.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
-                        <img src="img/partners/renualt_small.jpg">
+                    <a class="image-popup-no-margins" href="img/cars/renualt.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
+                        <img src="img/cars/renualt_small.jpg">
                     </a>
                 </div>
                 <div class="car">
-                    <a class="image-popup-no-margins" href="img/partners/fiat_ducat.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
-                        <img src="img/partners/fiat_ducat_small.jpg">
+                    <a class="image-popup-no-margins" href="img/cars/fiat_ducat.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
+                        <img src="img/cars/fiat_ducat_small.jpg">
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- модальное окно-->
+
+    <div class='modal-popup' id='modal1'>
+        <div class='content'>
+            <h1 class='title'>Transport</h1>
+            <p>
+                Najszybciej rozwijającym się obszarem w MULTICCO GROUP jest spedycja, oparta na długofalowej współpracy z niezawodnymi przewoźnikami.
+                Dzięki stałej obsłudze świadczonej wyłącznie przez najlepszych partnerów, sprawdzonych i wiarygodnych, nasi
+                spedytorzy efektywnie prowadzą ładunki po drogach całego świata – dostarczając towar na czas, na miejsce,
+                bezpiecznie i skutecznie.
+            </p>
+            <p>
+                W ofercie MULTICCO GROUP znajduje się również usługa kompleksowego transportu przedmiotów i urządzeń ponadgabarytowych. Usługa
+                obejmuje trasy krajowe i międzynarodowe. Państwa Opiekun zadba o stosowne pozwolenia Generalnej Dyrekcji
+                Dróg Krajowych i Autostrad (GDDKiA), eskortę pilota, eskortę policji, objazd i wytyczenie bezpiecznej trasy.
+                Posiadamy doświadczenie w prowadzeniu tego rodzaju ładunków – spedycja w wykonaniu MULTICCO GROUP to pewność
+                i bezpieczeństwo!
+            </p>
+            <p>
+                Nasza firma świadczy również usługi w zakresie kompleksowego transportu przedmiotów oraz urządzeń ponadgabarytowych.
+            </p>
+            <a class='btn close-modal' data-modal="#modal1" href="#">K Bye</a>
+        </div>
+    </div>
+    <div class='modal-popup' id='modal2'>
+        <div class='content'>
+            <h1 class='title'>Spedycja</h1>
+            <p>
+                Najszybciej rozwijającym się obszarem w MULTICCO GROUP jest spedycja, oparta na długofalowej współpracy z niezawodnymi przewoźnikami.
+                Dzięki stałej obsłudze świadczonej wyłącznie przez najlepszych partnerów, sprawdzonych i wiarygodnych, nasi
+                spedytorzy efektywnie prowadzą ładunki po drogach całego świata – dostarczając towar na czas, na miejsce,
+                bezpiecznie i skutecznie.
+            </p>
+            <p>
+                W ofercie MULTICCO GROUP znajduje się również usługa kompleksowego transportu przedmiotów i urządzeń ponadgabarytowych. Usługa
+                obejmuje trasy krajowe i międzynarodowe. Państwa Opiekun zadba o stosowne pozwolenia Generalnej Dyrekcji
+                Dróg Krajowych i Autostrad (GDDKiA), eskortę pilota, eskortę policji, objazd i wytyczenie bezpiecznej trasy.
+                Posiadamy doświadczenie w prowadzeniu tego rodzaju ładunków – spedycja w wykonaniu MULTICCO GROUP to pewność
+                i bezpieczeństwo!
+            </p>
+            <p>
+                Nasza firma świadczy również usługi w zakresie kompleksowego transportu przedmiotów oraz urządzeń ponadgabarytowych.
+            </p>
+            <a class='btn close-modal' data-modal="#modal2" href="#">K Bye</a>
+        </div>
+    </div>
+    <div class='modal-popup' id='modal3'>
+        <div class='content'>
+            <h1 class='title'>Logistyka</h1>
+            <p>
+                Najszybciej rozwijającym się obszarem w MULTICCO GROUP jest spedycja, oparta na długofalowej współpracy z niezawodnymi przewoźnikami.
+                Dzięki stałej obsłudze świadczonej wyłącznie przez najlepszych partnerów, sprawdzonych i wiarygodnych, nasi
+                spedytorzy efektywnie prowadzą ładunki po drogach całego świata – dostarczając towar na czas, na miejsce,
+                bezpiecznie i skutecznie.
+            </p>
+            <p>
+                W ofercie MULTICCO GROUP znajduje się również usługa kompleksowego transportu przedmiotów i urządzeń ponadgabarytowych. Usługa
+                obejmuje trasy krajowe i międzynarodowe. Państwa Opiekun zadba o stosowne pozwolenia Generalnej Dyrekcji
+                Dróg Krajowych i Autostrad (GDDKiA), eskortę pilota, eskortę policji, objazd i wytyczenie bezpiecznej trasy.
+                Posiadamy doświadczenie w prowadzeniu tego rodzaju ładunków – spedycja w wykonaniu MULTICCO GROUP to pewność
+                i bezpieczeństwo!
+            </p>
+            <p>
+                Nasza firma świadczy również usługi w zakresie kompleksowego transportu przedmiotów oraz urządzeń ponadgabarytowych.
+            </p>
+            <a class='btn close-modal' data-modal="#modal3" href="#">K Bye</a>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -405,7 +471,53 @@
     <script src="slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Слайдеры
+            // модальные окна
+            $(".modal-popup").each(function () {
+                $(this).wrap('<div class="overlay"></div>')
+            });
+
+            $(".open-modal").on('click', function (e) {
+                e.preventDefault();
+                e.stopImmediatePropagation;
+
+                var $this = $(this),
+                    modal = $($this).data("modal");
+
+                $(modal).parents(".overlay").addClass("open");
+                setTimeout(function () {
+                    $(modal).addClass("open");
+                }, 350);
+
+                $(document).on('click', function (e) {
+                    var target = $(e.target);
+
+                    if ($(target).hasClass("overlay")) {
+                        $(target).find(".modal-popup").each(function () {
+                            $(this).removeClass("open");
+                        });
+                        setTimeout(function () {
+                            $(target).removeClass("open");
+                        }, 350);
+                    }
+
+                });
+
+            });
+
+            $(".close-modal").on('click', function (e) {
+                e.preventDefault();
+                e.stopImmediatePropagation;
+
+                var $this = $(this),
+                    modal = $($this).data("modal");
+
+                $(modal).removeClass("open");
+                setTimeout(function () {
+                    $(modal).parents(".overlay").removeClass("open");
+                }, 350);
+
+            });
+            //слайдеры
             $('.main-slider').slick({
                 arrows: true,
                 nextArrow: '<button type="button" class="slider-main slide-n"></i></button>',
@@ -413,7 +525,7 @@
                 fade: true,
                 dots: true,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 4000,
                 pauseOnFocus: false,
                 responsive: [{
                         breakpoint: 870,
@@ -513,7 +625,7 @@
                         objs_list_li[i].style.width = '0';
                         objs_list_li[i].style.height = '0';
                         objs_list_li[i].style.overflow = 'hidden';
-                        geo_m.style.background = "url(img/countries/map-europe.png) no-repeat";
+                        geo_m.style.background = "url(img/countries/map-europe2.png) no-repeat";
                     }
 
                 }

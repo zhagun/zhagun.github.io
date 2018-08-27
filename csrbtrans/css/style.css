@@ -42,12 +42,14 @@
 
 .btn-next {
     right: -15px;
-    background: transparent url("../img/partners/next.png") center no-repeat;
+    background: transparent url("../img/cars/next.png") center no-repeat;
+    z-index: 1;
 }
 
 .btn-prev {
     left: -15px;
-    background: transparent url("../img/partners/prev.png") center no-repeat;
+    background: transparent url("../img/cars/prev.png") center no-repeat;
+    z-index: 1;
 }
 
 .darck-bg {
@@ -413,7 +415,7 @@
 }
 
 #geo-map {
-    background: url("../img/countries/map-europe.png") no-repeat;
+    background: url("../img/countries/map-europe2.png") no-repeat;
     width: 60rem;
     height: 50rem;
     position: relative;
@@ -596,19 +598,19 @@
     text-transform: uppercase;
 }
 
-.partners {
+.cars {
     padding-top: 65px;
     padding-bottom: 65px;
 }
 
-.partners-block {
+.cars-block {
     text-align: center;
     margin-right: 10px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
-.partners-block:hover {
+.cars-block:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
@@ -619,6 +621,97 @@
 
 .car img {
     margin: 0 auto;
+}
+
+.btn {
+    padding: 20px 50px;
+    display: inline-block;
+    background: #272e3c;
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: #dc1029;
+}
+
+.overlay {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    max-height: 100vh;
+    overflow-y: auto;
+    z-index: 150;
+}
+
+.overlay.open {
+    opacity: 1;
+    pointer-events: inherit;
+}
+
+.overlay .modal-popup {
+    background: white;
+    text-align: center;
+    padding: 40px 80px;
+    -webkit-box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.overlay .modal-popup.open {
+    opacity: 1;
+    pointer-events: inherit;
+}
+
+.overlay .modal-popup.open .content {
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+    opacity: 1;
+}
+
+.overlay .modal-popup .content {
+    -webkit-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+    opacity: 0;
+    -webkit-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+
+.content {
+    font-size: 1.4rem;
+}
+
+.overlay .modal-popup .title {
+    margin-top: 0;
 }
 
 html {
