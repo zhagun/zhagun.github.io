@@ -6,9 +6,11 @@
     color: $text-color-light
     outline: none
     font-size: 1.5rem
+    transition: .5s
     &:hover
         cursor: pointer
-        background: linear-gradient(-22deg, #0a547f, #38758f, #0a547f)
+        background-color: $color-white
+        color: $text-color-darck
 .kontakt-btn
     background-color: transparent
     padding: 1.2rem
@@ -37,6 +39,13 @@
     left: -15px
     background: transparent url(../img/cars/prev.png) center no-repeat
     z-index: 1
+.documents-btn
+    display: block
+    padding: 2rem 4rem
+    background-color: #2B2D42
+    font-size: 1.2rem
+    color: $text-color-light
+    
 
 .darck-bg
     position: relative
@@ -57,7 +66,7 @@
     font-size: 2.3rem
     text-transform: uppercase
     font-weight: 700
-    margin-bottom: 6rem
+    margin-bottom: 1.5rem
     &::before
         content: ''
         position: absolute
@@ -74,3 +83,9 @@
         right: -13rem
         top: 50%
         background: url(../img/line-darck.png) no-repeat
+.text-subtitle
+    margin-bottom: 5.5rem
+    font-size: 1.6rem
+    color: #999999
+    display: block
+    

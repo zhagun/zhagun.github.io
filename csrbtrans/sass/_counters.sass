@@ -44,4 +44,87 @@
     vertical-align: middle
     opacity: 1
     text-transform: uppercase
+.documents-btn-wrap
+    margin-top: 3rem
+.count
+    margin-top: 3rem
+    &-numbers
+        padding: 40px 20px
+        border: 1px solid rgba(0,0,0, .09)
+        text-align: center
+    &-descr
+        color: $text-color-light
+        font-size: 11px
+        text-align: center
+        font-family: Dosis, arial, sans-serif
+        text-transform: uppercase
+        letter-spacing: 0.2em
+        &-title
+            font-size: 1.3rem
+    &-block-first
+        position: relative
+        width: 100%
+        height: 223px
+        perspective: 1000px
+        &:hover .front-first
+            transform: rotateY(180deg)
+        &:hover .back-first
+            transform: rotateY(360deg)
+    &-block-second
+        position: relative
+        width: 100%
+        height: 100%
+        perspective: 1000px
+        &:hover .front-second
+            transform: rotateY(180deg)
+        &:hover .back-second
+            transform: rotateY(360deg)
+    &-block-third
+        position: relative
+        width: 100%
+        height: 100%
+        perspective: 1000px
+        &:hover .front-third
+            transform: rotateY(180deg)
+        &:hover .back-third
+            transform: rotateY(360deg)
+.front-first, .front-second, .front-third
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    transition: 1s
+    backface-visibility: hidden
+    border-radius: 10px
+.back-first, .back-second, .back-third
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 1s
+    transform: rotateY(180deg)
+    backface-visibility: hidden
+    border-radius: 10px
+.front-first, .back-first
+    background: #412a22
+.front-second, .back-second
+    background: #2cafaf
+.front-third, .back-third
+    background: #5b7876
+.cl
+    font-size: 6.5rem
+    color: $text-color-light
+.back-descr
+    color: $text-color-light
+    font-size: 1.6rem
+    max-width: 30rem
 

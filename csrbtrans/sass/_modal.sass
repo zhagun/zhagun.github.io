@@ -1,11 +1,9 @@
-
 $red: #EF233C
 $blue: #2B2D42
 $orange: #FF9F1C
 
-
 .btn
-    padding: 20px 50px
+    padding: 10px 35px
     display: inline-block
     background: #272e3c
     color: white
@@ -13,7 +11,9 @@ $orange: #FF9F1C
     transition: 0.35s ease-in-out
     font-weight: 700
     &:hover
-        background: darken($red, 7.5%)
+        cursor: pointer
+        background-color: $color-white
+        color: $text-color-darck
 
 .overlay
     width: 100%
@@ -31,7 +31,7 @@ $orange: #FF9F1C
     pointer-events: none
     transition: 0.35s ease-in-out
     max-height: 100vh
-    overflow-y: auto
+    
     z-index: 150
     &.open
         opacity: 1
@@ -39,13 +39,13 @@ $orange: #FF9F1C
     .modal-popup
         background: white
         text-align: center
-        padding: 40px 80px
+        padding: 4rem 3rem
         box-shadow: 0px 1px 10px rgba(white, 0.35)
         opacity: 0
         pointer-events: none
         transition: 0.35s ease-in-out
         max-height: 100vh
-        overflow-y: auto
+        
         &.open
             opacity: 1
             pointer-events: inherit
@@ -56,5 +56,23 @@ $orange: #FF9F1C
             transform: translate(0, -10px)
             opacity: 0
             transition: .35s ease-in-out
+            &-services
+               max-width: 50rem
+               font-size: 1.4rem
+               line-height: 1.7
         .title
             margin-top: 0
+.documents-title
+    background-color: gray
+    padding: 1rem
+    color: $text-color-light
+
+.documents-block
+    text-align: center
+    padding: 2rem 0
+.links
+    font-size: 1.4rem
+    color: $text-color-darck
+    &:hover
+        text-decoration: none
+        color: grey
