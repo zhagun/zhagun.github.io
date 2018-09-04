@@ -248,6 +248,159 @@
   background-color: rgba(212, 212, 212, 0.3);
 }
 
+.menu-mobile {
+  display: none;
+  position: fixed;
+  top: 4rem;
+  right: 3rem;
+  z-index: 3;
+}
+
+.mobile-menu-nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #222222;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  z-index: 0;
+}
+
+.mobile-menu-nav a:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.mobile-menu-nav a:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.mobile-menu-nav a:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.mobile-menu-nav a:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.mobile-menu-nav a:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.mobile-menu-nav a:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.menu-btn {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.menu-btn span {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222222;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222222;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-btn span::before {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.menu-btn-active span {
+  height: 0;
+}
+
+.menu-btn-active span::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-btn-active span::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.menu-active a:nth-child(1) {
+  -webkit-transform: translate(-100%, -100%);
+  transform: translate(-100%, -100%);
+}
+
+.menu-active a:nth-child(2) {
+  -webkit-transform: translate(-150%, 0%);
+  transform: translate(-150%, 0%);
+}
+
+.menu-active a:nth-child(3) {
+  -webkit-transform: translate(-100%, 100%);
+  transform: translate(-100%, 100%);
+}
+
+.menu-active a:nth-child(4) {
+  -webkit-transform: translate(0%, 150%);
+  transform: translate(0%, 150%);
+}
+
+.menu-active a:nth-child(5) {
+  -webkit-transform: translate(100%, 100%);
+  transform: translate(100%, 100%);
+}
+
+.menu-active a:nth-child(6) {
+  -webkit-transform: translate(150%, 0%);
+  transform: translate(150%, 0%);
+}
+
 .main-text {
   text-align: center;
   z-index: 3;
@@ -275,7 +428,7 @@
   background: #f8f8f8;
   color: #242830;
   height: 36rem;
-  z-index: 99;
+  z-index: 3;
 }
 
 .services-wrap {
@@ -687,7 +840,7 @@
 .count-block-second {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 223px;
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
@@ -705,7 +858,7 @@
 .count-block-third {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 223px;
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
@@ -923,8 +1076,8 @@
 .contacts-block-info-adress::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 32px;
+  height: 32px;
   left: 2rem;
   background: url("../img/contacts/adress.png") no-repeat;
 }
@@ -936,8 +1089,8 @@
 .contacts-block-info-phone::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 32px;
+  height: 32px;
   left: 2rem;
   background: url("../img/contacts/phone.png") no-repeat;
 }
@@ -949,8 +1102,8 @@
 .contacts-block-info-mail::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 32px;
+  height: 32px;
   left: 2rem;
   background: url("../img/contacts/mail.png") no-repeat;
 }
@@ -1083,10 +1236,6 @@
 }
 
 @media (max-width: 576px) {
-  .contacts-block-info {
-    display: none;
-  }
-
   .company {
     text-align: center;
   }
@@ -1099,10 +1248,26 @@
     padding-top: 3rem;
   }
 
+  .header {
+    padding-bottom: 23rem;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .main-text-block {
+    margin-top: 7.5rem;
+  }
+
   .main-text-title {
     margin-top: 1rem;
     font-size: 3rem;
     line-height: 1.2;
+  }
+
+  .main-text-descr {
+    margin-top: 2.5rem;
   }
 
   .text-title::before {
@@ -1111,6 +1276,97 @@
 
   .text-title::after {
     display: none;
+  }
+
+  .text-subtitle {
+    margin-bottom: 2.5rem;
+  }
+
+  .services {
+    height: auto;
+    padding-bottom: 0;
+    z-index: 1;
+  }
+
+  .services-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .services-block {
+    margin: 0 auto;
+    height: 26rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+  }
+
+  .services-block-img {
+    height: 7rem;
+  }
+
+  .services-block-hover {
+    padding: 1rem;
+  }
+
+  .open-modal {
+    width: 75%;
+  }
+
+  .about {
+    background: #ffffff;
+  }
+
+  .about-text {
+    margin-top: 2rem;
+  }
+
+  .countries {
+    padding-bottom: 3rem;
+  }
+
+  .country-list {
+    padding: 0;
+  }
+
+  .country-list li {
+    font-size: 0.8rem;
+  }
+
+  .count-block-first {
+    margin-bottom: 3rem;
+  }
+
+  .count-block-second {
+    margin-bottom: 3rem;
+  }
+
+  .count-block-third {
+    margin-bottom: 3rem;
+  }
+
+  .documents-block {
+    background-color: #778899;
+  }
+
+  .link-block {
+    background: none;
+  }
+
+  .link-block:hover {
+    background: none;
+    color: #000000;
+  }
+
+  .contacts-block-info {
+    position: static;
+  }
+
+  .modal-popup {
+    overflow-y: scroll;
   }
 }
 

@@ -85,6 +85,93 @@
         &:hover
             text-decoration: none
             background-color: rgba(212, 212, 212, 0.3)
+.menu-mobile
+    display: none
+    position: fixed
+    top: 4rem
+    right: 3rem
+    z-index: 3
+.mobile-menu-nav
+    & a
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 1.6rem
+      color: #222222
+      background-color: $color-white
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      transition: 0.4s
+      position: absolute
+      left: calc(50% - 15px)
+      top: calc(50% - 15px)
+      z-index: 0
+    & a:nth-child(1)
+      transition-delay: 0.1s
+    & a:nth-child(2)
+      transition-delay: 0.2s
+    & a:nth-child(3)
+      transition-delay: 0.3s
+    & a:nth-child(4)
+      transition-delay: 0.4s
+    & a:nth-child(5)
+      transition-delay: 0.5s
+    & a:nth-child(6)
+      transition-delay: 0.6s
+.menu-btn
+    display: block
+    position: relative
+    width: 50px
+    height: 50px
+    background-color: $color-white
+    border-radius: 50%
+    z-index: 3
+    & span
+        position: absolute
+        top: 50%
+        margin-top: -1px
+        left: 50%
+        margin-left: -10px
+        width: 20px
+        height: 2px
+        background-color: #222222
+        &::before, &::after
+            content: ''
+            position: absolute
+            display: block
+            top: 50%
+            margin-top: -1px
+            left: 50%
+            margin-left: -10px
+            width: 20px
+            height: 2px
+            background-color: #222222
+            transition: 0.5s
+        &::before
+            transform: translateY(-5px)
+        &::after
+            transform: translateY(5px)
+.menu-btn-active
+  & span
+    height: 0
+    &::before
+      transform: rotate(45deg)
+    &::after
+      transform: rotate(-45deg)
+.menu-active
+  & a:nth-child(1)
+    transform: translate(-100%, -100%)
+  & a:nth-child(2)
+    transform: translate(-150%, 0%)
+  & a:nth-child(3)
+    transform: translate(-100%, 100%)
+  & a:nth-child(4)
+    transform: translate(0%, 150%)
+  & a:nth-child(5)
+    transform: translate(100%, 100%)
+  & a:nth-child(6)
+    transform: translate(150%, 0%)
 .main-text
     text-align: center
     z-index: 3
