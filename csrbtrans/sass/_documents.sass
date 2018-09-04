@@ -1,0 +1,24 @@
+.documents
+    padding-top: 4.5rem 
+    background: #f8f8f8
+    padding-bottom: 3rem
+    &-block
+        margin-bottom: 2rem
+.link-block
+    background: #778899
+    font-size: 1.4rem
+    color: $text-color-darck
+    padding: 2rem
+    transition: .4s
+    &::before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 32px
+        height: 32px
+        margin-right: 5px
+        background: url(../img/documents/doc.png) no-repeat 0px 0px
+    &:hover
+        text-decoration: none
+        background-color: #696969
+        color: $text-color-light
