@@ -541,12 +541,17 @@
   border-radius: 10rem;
   -webkit-transition: all .4s;
   transition: all .4s;
+  outline: 0;
 }
 
 .services-btn:hover {
   cursor: pointer;
   background-color: #ffffff;
   color: #000000;
+}
+
+.services-btn:focus {
+  outline: 0;
 }
 
 .text-title-services {
@@ -730,74 +735,9 @@
   text-align: left;
 }
 
-.counters {
-  background: url("../img/counters/counters-bg.jpg") no-repeat;
-  width: 100%;
-  height: 100%;
-  padding: 4rem 0;
-  margin-top: 3rem;
-}
-
-.counters-block-clients {
-  background-color: red;
-  opacity: 0.6;
-  width: 30rem;
-  height: 30rem;
-  text-align: center;
-}
-
-.counters-block-clients::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.counters-block-country {
-  background-color: green;
-  opacity: 0.6;
-  width: 30rem;
-  height: 30rem;
-  text-align: center;
-}
-
-.counters-block-country::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.counters-block-work {
-  background-color: blue;
-  opacity: 0.6;
-  width: 30rem;
-  height: 30rem;
-  text-align: center;
-}
-
-.counters-block-work::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.centered {
-  font-size: 3rem;
-  display: inline-block;
-  color: #ffffff;
-  vertical-align: middle;
-  opacity: 1;
-  text-transform: uppercase;
-}
-
-.documents-btn-wrap {
-  margin-top: 3rem;
-}
-
 .count {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .count-numbers {
@@ -1018,7 +958,7 @@
   color: #ffffff;
   font-weight: 300;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .cars {
